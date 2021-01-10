@@ -2,7 +2,7 @@
 public class Calculator {
 
 	public int calculate(String input) {
-		String num[]=input.split(",");
+		String num[]=input.split(",|\n");
 		if(isEmpty(input)) {
 			return 0;
 		}
