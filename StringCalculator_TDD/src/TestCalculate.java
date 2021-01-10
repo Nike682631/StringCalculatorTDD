@@ -23,5 +23,8 @@ public class TestCalculate {
 	public void twoNumbersCommaDelimitersReturnSum() {
 		assertEquals(calculator.calculate("1,2"),3);
 	}
-
+	
+	public void twoNumbersNewLineDelimitersReturnSum() {
+		assertEquals(calculator.calculate("1\n2"),3);
+	}
 }

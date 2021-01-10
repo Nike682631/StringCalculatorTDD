@@ -5,8 +5,8 @@
     <classes>
       <class name="TestCalculate">
         <methods>
+          <include name="twoNumbersNewLineDelimitersReturnSum"/>
           <include name="init"/>
-          <include name="twoNumbersCommaDelimitersReturnSum"/>
         </methods>
       </class> <!-- TestCalculate -->
     </classes>
