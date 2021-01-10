@@ -9,15 +9,20 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">89</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">58</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">TestCalculate</td><td><a href="#m0">negativeInputReturnsException</a></td><td rowspan="1">1610289133325</td><td rowspan="1">5</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">TestCalculate</td><td><a href="#m1">emptyStringReturnsZero</a></td><td rowspan="1">1610289133298</td><td rowspan="1">22</td></tr><tr class="passedeven"><td><a href="#m2">singleValueIsReplied</a></td><td rowspan="1">1610289133335</td><td rowspan="1">2</td></tr><tr class="passedeven"><td><a href="#m3">threeNumbersCommaDelimitersBothWaysReturnSum</a></td><td rowspan="1">1610289133339</td><td rowspan="1">2</td></tr><tr class="passedeven"><td><a href="#m4">twoNumbersCommaDelimitersReturnSum</a></td><td rowspan="1">1610289133344</td><td rowspan="1">2</td></tr><tr class="passedeven"><td><a href="#m5">twoNumbersNewLineDelimitersReturnSum</a></td><td rowspan="1">1610289133349</td><td rowspan="1">1</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">TestCalculate</td><td><a href="#m0">negativeInputReturnsException</a></td><td rowspan="1">1610290822657</td><td rowspan="1">15</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">TestCalculate#negativeInputReturnsException</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestException: 
-Method TestCalculate.negativeInputReturnsException()[pri:0, instance:TestCalculate@6a2b953e] should have thrown an exception of type class java.lang.Exception
-	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
-	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:747)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:635)
+<h2>Default test</h2><h3 id="m0">TestCalculate#negativeInputReturnsException</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">java.lang.Exception: negatives not allowed-1
+	at Calculator.getSum(Calculator.java:24)
+	at Calculator.calculate(Calculator.java:16)
+	at TestCalculate.negativeInputReturnsException(TestCalculate.java:43)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
 	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
 	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
 	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
@@ -41,10 +46,5 @@ Method TestCalculate.negativeInputReturnsException()[pri:0, instance:TestCalcula
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">TestCalculate#emptyStringReturnsZero</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">TestCalculate#singleValueIsReplied</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">TestCalculate#threeNumbersCommaDelimitersBothWaysReturnSum</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">TestCalculate#twoNumbersCommaDelimitersReturnSum</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">TestCalculate#twoNumbersNewLineDelimitersReturnSum</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -11,35 +11,35 @@ public class TestCalculate {
 	}
 	
 	//First Test Case
-	public void emptyStringReturnsZero() {						
+	public void emptyStringReturnsZero() throws Exception {						
 		assertEquals(calculator.calculate(""), 0);
 		
 	}
 	
 	//Second Test Case
-	public void singleValueIsReplied() {
+	public void singleValueIsReplied() throws Exception {
 		assertEquals(calculator.calculate("1"), 1);
 		
 	}
 	
 	//Third Test Case
-	public void twoNumbersCommaDelimitersReturnSum() {
+	public void twoNumbersCommaDelimitersReturnSum() throws Exception {
 		assertEquals(calculator.calculate("1,2"),3);
 	}
 	
 	//Fourth Test Case
-	public void twoNumbersNewLineDelimitersReturnSum() {
+	public void twoNumbersNewLineDelimitersReturnSum() throws Exception {
 		assertEquals(calculator.calculate("1\n2"),3);
 	}
 	
 	//Fifth Test Case
-	public void threeNumbersCommaDelimitersBothWaysReturnSum() {
+	public void threeNumbersCommaDelimitersBothWaysReturnSum() throws Exception {
 		assertEquals(calculator.calculate("1,2,3"),6);
 	}
 	
 	//Sixth Test case
 	@Test(expectedExceptions=Exception.class)
-	public void negativeInputReturnsException() {
+	public void negativeInputReturnsException() throws Exception {
 		calculator.calculate("-1");
 	}
 }
