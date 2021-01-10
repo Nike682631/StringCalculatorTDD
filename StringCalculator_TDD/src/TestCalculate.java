@@ -44,9 +44,15 @@ public class TestCalculate {
 		calculator.add("-1,23,-4,-5");
 	}
 	
+	//Seventh Test case
 	public void IgnoreNumberGreaterthan1000() throws Exception {
 		assertEquals(calculator.add("1001,10,10"),20);
 
+	}
+	
+	//Eighth Test Case
+	public void DelimitersofAnyLength() throws Exception {
+		assertEquals(calculator.add("//[***]\n1***2***3"),(6));
 	}
 	
 	
