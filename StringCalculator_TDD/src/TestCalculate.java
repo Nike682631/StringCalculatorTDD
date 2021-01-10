@@ -12,34 +12,43 @@ public class TestCalculate {
 	
 	//First Test Case
 	public void emptyStringReturnsZero() throws Exception {						
-		assertEquals(calculator.calculate(""), 0);
+		assertEquals(calculator.add(""), 0);
 		
 	}
 	
 	//Second Test Case
 	public void singleValueIsReplied() throws Exception {
-		assertEquals(calculator.calculate("1"), 1);
+		assertEquals(calculator.add("1"), 1);
 		
 	}
 	
 	//Third Test Case
 	public void twoNumbersCommaDelimitersReturnSum() throws Exception {
-		assertEquals(calculator.calculate("1,2"),3);
+		assertEquals(calculator.add("1,2"),3);
 	}
 	
 	//Fourth Test Case
 	public void twoNumbersNewLineDelimitersReturnSum() throws Exception {
-		assertEquals(calculator.calculate("1\n2"),3);
+		assertEquals(calculator.add("1\n2"),3);
 	}
 	
 	//Fifth Test Case
 	public void threeNumbersCommaDelimitersBothWaysReturnSum() throws Exception {
-		assertEquals(calculator.calculate("1,2,3"),6);
+		assertEquals(calculator.add("1,2,3"),6);
 	}
 	
 	//Sixth Test case
 	@Test(expectedExceptions=Exception.class)
 	public void negativeInputReturnsException() throws Exception {
-		calculator.calculate("-1");
+		calculator.add("-1");
 	}
+	
+	public void IgnoreNumberGreaterthan1000() throws Exception {
+		assertEquals(calculator.add("1001,10,10"),20);
+
+	}
+	
+	
+	
+	
 }

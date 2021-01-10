@@ -3,7 +3,7 @@ public class Calculator {
 	
 	private final String delimiter=",|\n";
 	
-	public int calculate(String input) throws Exception {
+	public int add(String input) throws Exception {
 		
 		String num[]=input.split(delimiter);
 		if(isEmpty(input)) {
@@ -22,6 +22,7 @@ public class Calculator {
 		findNegativeInputs(num);
 		int sum=0;
 		for (String current:num) {
+
 			sum+=Integer.parseInt(current);
 		}
 		return sum;
