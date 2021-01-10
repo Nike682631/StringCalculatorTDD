@@ -22,7 +22,8 @@ public class Calculator {
 		findNegativeInputs(num);
 		int sum=0;
 		for (String current:num) {
-
+			if(stringToInt(current)>1000)
+				continue;
 			sum+=Integer.parseInt(current);
 		}
 		return sum;
