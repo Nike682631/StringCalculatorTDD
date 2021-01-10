@@ -13,7 +13,7 @@ public class Calculator {
 			String[] NumberandPattern=input.split("\n",2);
 			String delimiter=parseDelimiter(NumberandPattern[0]);
 			String num1[]= NumberandPattern[1].split(delimiter);
-			//num=num1.clone();
+			num=num1.clone();
 		}
 		
 		else {

@@ -49,12 +49,12 @@ public class TestCalculate {
 		assertEquals(calculator.add("1001,10,10"),20);
 
 	}
-//	
-//	//Eighth Test Case
-//	public void DelimitersofAnyLength() throws Exception {
-//		assertEquals(calculator.add("//[***]\n1***2***3"),(6));
-//	}
-//	
+	
+	//Eighth Test Case
+	public void DelimitersofAnyLength() throws Exception {
+		assertEquals(calculator.add("//[***]\n1***2***3"),(6));
+	}
+	
 	//Ninth Test Case
 	public void AcceptsMultipleDelimiters() throws Exception {
 		assertEquals(calculator.add("//[**][%%]\n1**2%%3"),6);
