@@ -20,6 +20,11 @@ public class Calculator {
 	
 	private int getSum(String[]num) throws Exception {
 		findNegativeInputs(num);
+		return findsum(num);
+
+	}
+	
+	private int findsum(String[] num) {
 		int sum=0;
 		for (String current:num) {
 			if(stringToInt(current)>1000)
@@ -27,7 +32,6 @@ public class Calculator {
 			sum+=Integer.parseInt(current);
 		}
 		return sum;
-
 	}
 	
 	private void findNegativeInputs(String []num) throws Exception {
