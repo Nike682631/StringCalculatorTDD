@@ -2,7 +2,9 @@
 public class Calculator {
 	
 	private final String delimiter=",|\n";
+	
 	public int calculate(String input) {
+		
 		String num[]=input.split(delimiter);
 		if(isEmpty(input)) {
 			return 0;
@@ -11,13 +13,17 @@ public class Calculator {
 			return stringToInt(input);
 		}
 		else {
-			return getSum(num[0],num[1]);
+			return getSum(num);
 		}
 		
 	}
 	
-	private int getSum(String numA,String numB) {
-		return Integer.parseInt(numA)+ Integer.parseInt(numB);
+	private int getSum(String[]num) {
+		int sum=0;
+		for (int i = 0; i < num.length; i++) {
+			sum+=Integer.parseInt(num[i]);
+		}
+		return sum;
 
 	}
 	private boolean isEmpty(String input) {
