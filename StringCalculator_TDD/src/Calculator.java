@@ -12,9 +12,8 @@ public class Calculator {
 		if(input.startsWith("//")) {
 			String[] NumberandPattern=input.split("\n",2);
 			String delimiter=parseDelimiter(NumberandPattern[0]);
-			System.out.println(delimiter);
 			String num1[]= NumberandPattern[1].split(delimiter);
-			num=num1.clone();
+			//num=num1.clone();
 		}
 		
 		else {
