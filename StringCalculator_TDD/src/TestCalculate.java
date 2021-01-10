@@ -11,12 +11,12 @@ public class TestCalculate {
 	}
 	
 	public void emptyStringReturnsZero() {
-		assertEquals(calculator.calculate(""),0);
+		assertEquals(calculator.calculate(""), 0);
 		
 	}
 	
 	public void singleValueIsReplied() {
-		assertEquals("1",1);
+		assertEquals(calculator.calculate("1"), 1);
 		
 	}
 
