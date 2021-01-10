@@ -8,8 +8,22 @@ public class Calculator {
 	
 	
 	public int add(String input) throws Exception {
-		String delimiter=",|\n";
-		String num[]=input.split(delimiter);
+		String num[]=null;
+		if(input.startsWith("//")) {
+			String[] NumberandPattern=input.split("\n",2);
+			String delimiter=parseDelimiter(NumberandPattern[0]);
+			System.out.println(delimiter);
+			String num1[]= NumberandPattern[1].split(delimiter);
+			num=num1.clone();
+		}
+		
+		else {
+			String delimiter=",|\n";
+			String num2[]=input.split(delimiter);
+			num=num2.clone();
+		}	
+		
+		
 		
 		
 		if(isEmpty(input)) {
