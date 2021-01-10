@@ -19,18 +19,21 @@ public class Calculator {
 	}
 	
 	private int getSum(String[]num) throws Exception {
-		for (String current :num) {
-			if(stringToInt(current)<0) {
-				throw new Exception("negatives not allowed"+ current);
-			}
-		}
-		
+		findNegativeInputs(num);
 		int sum=0;
 		for (String current:num) {
 			sum+=Integer.parseInt(current);
 		}
 		return sum;
 
+	}
+	
+	private void findNegativeInputs(String []num) throws Exception {
+		for (String current :num) {
+			if(stringToInt(current)<0) {
+				throw new Exception("negatives not allowed"+ current);
+			}
+		}	
 	}
 	private boolean isEmpty(String input) {
 		return input.isEmpty();
