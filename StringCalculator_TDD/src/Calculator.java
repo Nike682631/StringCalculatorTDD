@@ -35,9 +35,16 @@ public class Calculator {
 	}
 	
 	private void findNegativeInputs(String []num) throws Exception {
+		String neg="";
 		for (String current :num) {
 			if(stringToInt(current)<0) {
-				throw new Exception("negatives not allowed"+ current);
+				neg+=current+",";
+				if(neg.length()==2) {
+					throw new Exception("negatives not allowed"+neg.charAt(0) );
+				}
+				else {
+					throw new Exception("negatives not allowed"+neg );
+				}
 			}
 		}	
 	}

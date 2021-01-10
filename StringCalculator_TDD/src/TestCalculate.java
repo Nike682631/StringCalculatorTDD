@@ -41,6 +41,7 @@ public class TestCalculate {
 	@Test(expectedExceptions=Exception.class)
 	public void negativeInputReturnsException() throws Exception {
 		calculator.add("-1");
+		calculator.add("-1,23,-4,-5");
 	}
 	
 	public void IgnoreNumberGreaterthan1000() throws Exception {
