@@ -2,28 +2,28 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-01-10T19:45:54 IST" name="Default suite" finished-at="2021-01-10T19:45:54 IST" duration-ms="95">
+  <suite started-at="2021-01-10T19:48:23 IST" name="Default suite" finished-at="2021-01-10T19:48:23 IST" duration-ms="82">
     <groups>
     </groups>
-    <test started-at="2021-01-10T19:45:54 IST" name="Default test" finished-at="2021-01-10T19:45:54 IST" duration-ms="95">
+    <test started-at="2021-01-10T19:48:23 IST" name="Default test" finished-at="2021-01-10T19:48:23 IST" duration-ms="82">
       <class name="TestCalculate">
-        <test-method is-config="true" signature="init()[pri:0, instance:TestCalculate@2638011]" started-at="2021-01-10T19:45:54 IST" name="init" finished-at="2021-01-10T19:45:54 IST" duration-ms="14" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:TestCalculate@2638011]" started-at="2021-01-10T19:48:23 IST" name="init" finished-at="2021-01-10T19:48:23 IST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="emptyStringReturnsZero()[pri:0, instance:TestCalculate@2638011]" started-at="2021-01-10T19:45:54 IST" name="emptyStringReturnsZero" finished-at="2021-01-10T19:45:54 IST" duration-ms="20" status="PASS">
+        <test-method signature="emptyStringReturnsZero()[pri:0, instance:TestCalculate@2638011]" started-at="2021-01-10T19:48:23 IST" name="emptyStringReturnsZero" finished-at="2021-01-10T19:48:23 IST" duration-ms="18" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- emptyStringReturnsZero -->
-        <test-method signature="singleValueIsReplied()[pri:0, instance:TestCalculate@2638011]" started-at="2021-01-10T19:45:54 IST" name="singleValueIsReplied" finished-at="2021-01-10T19:45:54 IST" duration-ms="2" status="PASS">
+        <test-method signature="singleValueIsReplied()[pri:0, instance:TestCalculate@2638011]" started-at="2021-01-10T19:48:23 IST" name="singleValueIsReplied" finished-at="2021-01-10T19:48:23 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- singleValueIsReplied -->
-        <test-method signature="twoNumbersCommaDelimitersReturnSum()[pri:0, instance:TestCalculate@2638011]" started-at="2021-01-10T19:45:54 IST" name="twoNumbersCommaDelimitersReturnSum" finished-at="2021-01-10T19:45:54 IST" duration-ms="2" status="PASS">
+        <test-method signature="twoNumbersCommaDelimitersReturnSum()[pri:0, instance:TestCalculate@2638011]" started-at="2021-01-10T19:48:23 IST" name="twoNumbersCommaDelimitersReturnSum" finished-at="2021-01-10T19:48:23 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- twoNumbersCommaDelimitersReturnSum -->
-        <test-method signature="twoNumbersNewLineDelimitersReturnSum()[pri:0, instance:TestCalculate@2638011]" started-at="2021-01-10T19:45:54 IST" name="twoNumbersNewLineDelimitersReturnSum" finished-at="2021-01-10T19:45:54 IST" duration-ms="2" status="PASS">
+        <test-method signature="twoNumbersNewLineDelimitersReturnSum()[pri:0, instance:TestCalculate@2638011]" started-at="2021-01-10T19:48:23 IST" name="twoNumbersNewLineDelimitersReturnSum" finished-at="2021-01-10T19:48:23 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- twoNumbersNewLineDelimitersReturnSum -->
