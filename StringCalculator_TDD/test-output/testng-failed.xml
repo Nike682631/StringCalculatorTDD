@@ -6,7 +6,7 @@
       <class name="TestCalculate">
         <methods>
           <include name="init"/>
-          <include name="singleValueIsReplied"/>
+          <include name="emptyStringReturnsZero"/>
         </methods>
       </class> <!-- TestCalculate -->
     </classes>
