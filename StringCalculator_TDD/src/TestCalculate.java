@@ -33,8 +33,9 @@ public class TestCalculate {
 	}
 	
 	//Fifth Test Case
-	public void threeNumbersCommaDelimitersBothWaysReturnSum() throws Exception {
+	public void threeNumbersCommaAndNewlineDelimitersBothWaysReturnSum() throws Exception {
 		assertEquals(calculator.add("1,2,3"),6);
+		assertEquals(calculator.add("1\n2\n3"),6);
 	}
 	
 	//Sixth Test case
@@ -53,6 +54,7 @@ public class TestCalculate {
 	//Eighth Test Case
 	public void DelimitersofAnyLength() throws Exception {
 		assertEquals(calculator.add("//[***]\n1***2***3"),(6));
+		assertEquals(calculator.add("//[;]\n1;2"),(3));
 	}
 	
 	//Ninth Test Case
